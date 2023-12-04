@@ -13,6 +13,7 @@ Creating a Twitter homepage project using PHP, HTML, CSS, and JavaScript with a 
 # Languages
 
 ```
+MySQL
 Php
 Javascript
 CSS
@@ -20,6 +21,12 @@ html
 ```
 
 # Installation
+
+You can downoload SQL DDL.
+
+'Schema.sql' is the tables we acutally used.
+
+'Final_Schema.sql' is the tables we proposed for planning.
 
 If you want to run this website, you need to download PHP in advance. Place the provided code in the 'htdocs' directory within the 'Apache24' directory. You can then access and run it by visiting 'localhost/Main_page.php'.
 
