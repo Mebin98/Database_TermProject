@@ -1,0 +1,260 @@
+@media screen and (max-width: 768px) {
+    .wrap .main-wrap {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+        .left-section ul li {
+            font-size: 18px;
+        }
+
+    .join-wrap {
+        padding-top: 100px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+:root {
+    --twitter-blue: #1da1f2;
+    --input-text-background-gray: #f5f8fa;
+    --input-border-color: #1da1f2;
+    --input-text-color: #ffffff;
+    --placeholder-text-color: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: var(--twitter-blue);
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+    .wrap .main-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+.side {
+    width: 50%;
+}
+
+.left-section {
+    background: var(--twitter-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-msg-wrap ul {
+    list-style: none;
+    height: 160px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-section ul li {
+    color: white;
+    font-size: 24px;
+}
+
+    .left-section ul li span {
+        font-weight: 800;
+        font-size: 20px;
+        color: white;
+    }
+
+    .left-section ul li i {
+        padding-right: 15px;
+        color: white;
+    }
+
+.right-section {
+    padding: 15px;
+    flex: auto;
+}
+
+.login-form-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+}
+
+.login-input-wrap {
+    position: relative;
+    margin: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .login-input-wrap label {
+        color: var(--twitter-blue);
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .login-input-wrap input {
+        margin: 8px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        border: solid 1px var(--input-border-color);
+        background: var(--input-text-background-gray);
+        width: 200px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 20px;
+        color: var(--twitter-blue);
+    }
+
+        .login-input-wrap input[type="text"]::placeholder,
+        .login-input-wrap input[type="password"]::placeholder {
+            color: var(--twitter-blue);
+            opacity: 1;
+            font-weight: bold;
+        }
+
+.login-btn {
+    width: 75px;
+    height: 40px;
+    border-radius: 20px;
+    background: white;
+    font-weight: 900;
+    font-size: 16px;
+    border: solid 1px var(--twitter-blue);
+    color: var(--twitter-blue);
+    margin-top: 22px;
+}
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-wrap {
+    padding-top: 300px;
+    width: 390px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+    .join-wrap h2 {
+        font-size: 32px;
+        font-weight: 900;
+        color: white;
+    }
+
+.join-logo-wrap i {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.login-signup-btn-wrap {
+    width: 400px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+    .login-signup-btn-wrap span {
+        font-size: 18px;
+        font-weight: 900;
+        color: white;
+    }
+
+    .login-signup-btn-wrap button {
+        background: white;
+        width: 100%;
+        height: 40px;
+        border: solid 1px var(--twitter-blue);
+        font-weight: 900;
+        color: var(--twitter-blue);
+        border-radius: 20px;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+.signup-btn, .login-btn {
+    cursor: pointer;
+}
+
+    .signup-btn:active, .login-btn:active {
+        transform: scale(0.95);
+        background-color: #1991DA;
+    }
+
+.login-signup-btn-wrap .signup-btn {
+    background: white;
+    border: solid 1px var(--twitter-blue);
+    color: var(--twitter-blue);
+    font-size: 16px;
+}
+
+.login-signup-btn-wrap .login-btn {
+    background: white;
+    border: solid 1px var(--twitter-blue);
+    color: var(--twitter-blue);
+}
+
+.login-message {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: none;
+}
+
+    footer ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+        footer ul li {
+            padding: 0 20px;
+        }
+
+            footer ul li a {
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+            }

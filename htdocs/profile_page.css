@@ -1,0 +1,332 @@
+/* 기본 설정 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white; /* 배경을 하얀색으로 변경 */
+    color: black; /* 글자 색상을 검은색으로 변경 */
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* 고정 위치 요소 */
+#fixedarrow {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    border: 1px solid #1DA1F2; /* 테두리 색상을 트위터 파란색으로 변경 */
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black; /* 아이콘 색상을 검은색으로 변경 */
+}
+
+/* 링크와 리스트 아이템 */
+a, li {
+    text-decoration: none;
+    list-style: none;
+    color: black; /* 글자 색상을 검은색으로 변경 */
+}
+
+    li:hover {
+        color: black; /* 호버시 글자 색상을 검은색으로 변경 */
+        background-color: #1DA1F2; /* 호버시 배경색을 트위터 파란색으로 변경 */
+        opacity: 0.9;
+        border-radius: 30px;
+        width: 200px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+/* 소셜 미디어 아이콘 */
+#twittericon {
+    color: black; /* 아이콘 색상을 검은색으로 변경 */
+    font-size: 25px;
+    margin-left: 75px;
+}
+
+    #twittericon:hover {
+        color: #1DA1F2; /* 호버시 아이콘 색상을 트위터 파란색으로 변경 */
+    }
+
+#icons {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+/* 왼쪽 세로 메뉴 */
+.leftverticalmenu {
+    height: 100vh;
+    width: 300px;
+    text-align: left;
+    line-height: 60px;
+    font-size: 20px;
+    border-right: 1px solid #1DA1F2; /* 테두리 색상을 트위터 파란색으로 변경 */
+    position: fixed;
+}
+
+ul {
+    margin: auto;
+    width: 50%;
+    margin-top: -10px;
+}
+
+/* 프로필 이미지 */
+.profileimage {
+    border-radius: 50%;
+    border: 2px solid #1DA1F2; /* 프로필 이미지 테두리를 트위터 파란색으로 변경 */
+    width: 25px;
+    margin-right: 10px;
+    margin-bottom: -5px;
+}
+
+figure {
+    border-radius: 50px;
+    height: 55px;
+    font-weight: bold;
+    background-color: #1DA1F2; /* 배경색을 트위터 파란색으로 변경 */
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+    figure:hover {
+        background-color: #1A91DA; /* 호버시 배경색을 조금 더 어두운 트위터 파란색으로 변경 */
+    }
+
+/* 중간 및 오른쪽 컨테이너 */
+.flexcontainer {
+    display: flex;
+    position: absolute;
+    left: 300px;
+}
+
+.middlecontainer {
+    width: 700px;
+    border-right: 1px solid #1DA1F2; /* 중간 컨테이너 테두리를 트위터 파란색으로 변경 */
+    height: 100%;
+}
+
+/* 헤더 섹션 */
+.headsec {
+    display: flex;
+    margin-top: 10px;
+}
+
+#fa-arrow-left {
+    color: black; /* 아이콘 색상을 검은색으로 변경 */
+    font-size: 20px;
+    margin: 10px 20px 0 20px;
+    cursor: pointer;
+}
+
+/* 헤더 이미지 */
+.headerprofileimage {
+    margin-top: 10px;
+    position: relative;
+}
+
+#headerimage {
+    width: 700px;
+    height: 200px;
+}
+
+#profilepic {
+    border-radius: 50%;
+    width: 150px;
+    height: 130px;
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    border: 4px solid white; /* 프로필 이미지 주변 테두리를 하얀색으로 변경 */
+}
+
+/* 프로필 편집 버튼 */
+.editprofile {
+    margin-top: 5px;
+    float: right;
+    border: 1px solid #1DA1F2; /* 테두리 색상을 트위터 파란색으로 변경 */
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    color: black; /* 글자 색상을 검은색으로 변경 */
+}
+
+/* 바이오 */
+.bio {
+    margin-top: 55px;
+    margin-left: 20px;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+/* 팔로워 및 팔로잉 */
+.followers, .nawa {
+    display: flex;
+    margin-right: 15px;
+}
+
+/* 헤딩 */
+.heading {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black; /* 테두리 색상을 검은색으로 변경 */
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+    .heading p {
+        display: block;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+        .heading p:hover {
+            background: #1DA1F2; /* 호버시 배경색을 트위터 파란색으로 변경 */
+        }
+
+/* 트윗 스타일 */
+.avi {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.mytweets {
+    display: flex;
+    margin: 15px 0 15px 0;
+    margin-bottom: 800px;
+}
+
+.tweetcontent {
+    margin-top: 5px;
+}
+
+.retweeticons {
+    margin-top: 5px;
+    margin-left: -10px;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+/* 검색 바 */
+.searchbar {
+    display: inline-flex;
+    margin: 10px 0 0 25px;
+    border: 1px solid #1DA1F2; /* 테두리 색상을 트위터 파란색으로 변경 */
+    padding: 13px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+#searchbox {
+    border: none;
+    background-color: transparent;
+    color: black; /* 글자 색상을 검은색으로 변경 */
+}
+
+.searchicon {
+    color: #1DA1F2; /* 아이콘 색상을 트위터 파란색으로 변경 */
+    margin-right: 15px;
+}
+
+/* 트위터 미디어 그리드 */
+.twittermedia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid #1DA1F2; /* 테두리 색상을 트위터 파란색으로 변경 */
+    border-radius: 20px;
+    margin: 10px 0 0 25px;
+    width: 300px;
+}
+
+    .twittermedia img {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+    }
+
+/* 트렌드 */
+.nigeriatrends {
+    margin: 30px 0 0 25px;
+    width: 300px;
+    border: 1px solid #1DA1F2; /* 테두리 색상을 트위터 파란색으로 변경 */
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.headertrends {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black; /* 테두리 색상을 검은색으로 변경 */
+    padding: 10px;
+}
+
+.trenditem {
+    border-bottom: 1px solid black; /* 테두리 색상을 검은색으로 변경 */
+    padding: 10px;
+    line-height: 22px;
+}
+
+.hashtag {
+    font-weight: bolder;
+}
+
+/* 모달 스타일 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+    border: 1px solid #1DA1F2; /* 테두리 색상을 트위터 파란색으로 변경 */
+    background-color: white; /* 배경색을 하얀색으로 변경 */
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.modal-content {
+    padding: 20px;
+    border: 1px solid #1DA1F2; /* 테두리 색상을 트위터 파란색으로 변경 */
+}
+
+.close {
+    color: black; /* 글자 색상을 검은색으로 변경 */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #1DA1F2; /* 호버시 색상을 트위터 파란색으로 변경 */
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* 팔로워 및 팔로잉 숫자 스타일 */
+.number {
+    font-weight: bold; /* 글자를 굵게 */
+    color: #1DA1F2; /* 트위터 파란색으로 설정 */
+    margin-right: 5px; /* 숫자와 텍스트 사이 간격을 주기 위해 */
+}
+
+/* 팔로워 및 팔로잉 텍스트 스타일 */
+.followers span, .followers span {
+    margin-left: 5px; /* 텍스트와 숫자 사이 간격을 주기 위해 */
+}
